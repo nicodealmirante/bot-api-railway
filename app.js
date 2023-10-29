@@ -6,6 +6,7 @@ const {
   createProvider,
   createFlow,
   addKeyword,
+  EVENTS
 } = require("@bot-whatsapp/bot");
 
 const MockAdapter = require("@bot-whatsapp/database/mock");

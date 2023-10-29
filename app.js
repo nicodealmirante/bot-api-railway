@@ -525,16 +525,6 @@ const main = async () => {
 
   /**
    * Enviar mensaje con metodos propios del provider del bot
-   */
-  app.post("/send-message-bot", async (req, res) => {
-    await adapterProvider.sendText("52XXXXXXXXX@c.us", "Mensaje desde API");
-    res.send({ data: "enviado!" });
-  });
 
-
-  
-  const PORT = process.env.PORT || 4000;
-  app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
-};
-
+*/
 main();

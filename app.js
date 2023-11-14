@@ -28,7 +28,7 @@ const main = async () => {
   /**
    * Enviar mensaje con metodos propios del provider del bot
    */
-  app.post("/send-message-bot", async (req, res) => {
+  app.get("/send-message-bot", async (req, res) => {
     await adapterProvider.sendText("52XXXXXXXXX@c.us", "Mensaje desde API");
     res.send({ data: "enviado!" });
   });
